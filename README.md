@@ -43,9 +43,9 @@ Recharts and React versions are pinned to avoid breaking changes.
 ## How to use
 
 1. Start with the default three sprints or add more with **Add Sprint**
-2. For each sprint, enter:
-   - **New Scope**: story points added to the backlog *this sprint* (incremental, not cumulative)
-   - **Pts Done**: story points completed *this sprint* (incremental, not cumulative)
-3. The chart and header totals update instantly
-4. Hover over the chart for exact values per sprint
+2. Choose an input mode:
+   - **Incremental** — enter points added/completed *per sprint*
+   - **Cumulative** — enter running totals *after each sprint*
+3. Fill in scope and completed points for each sprint
+4. The chart and header totals update instantly
 5. Delete a sprint by hovering its row and clicking the trash icon (minimum 1 sprint enforced)
