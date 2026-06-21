@@ -7,7 +7,7 @@ Built for capstone project, since a simple and a working tool was hard to find.
 ## What it does
 
 - Tracks **cumulative scope** (orange step line) and **cumulative completed points** (teal line) across sprints
-- Scope can grow mid-project — the step-after chart style makes scope increases visible immediately
+- Scope can grow mid-project and the step-after chart style makes scope increases visible immediately
 - Add or remove sprints dynamically; summary totals update in the header
 
 ## Running locally
