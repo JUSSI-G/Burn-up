@@ -2,6 +2,8 @@
 
 A lightweight, no-build sprint burn-up chart for agile teams. Enter incremental scope and completed points per sprint and watch the chart update live.
 
+Built for capstone project, since a simple and a working tool was hard to find.
+
 ## What it does
 
 - Tracks **cumulative scope** (orange step line) and **cumulative completed points** (teal line) across sprints
@@ -10,27 +12,18 @@ A lightweight, no-build sprint burn-up chart for agile teams. Enter incremental 
 
 ## Running locally
 
-Because `app.js` is loaded via Babel standalone (which uses `fetch`), the page must be served over HTTP opening `index.html` directly as a file will not work.
-
-Any static file server works. Pick whichever is most convenient, for example:
+Open `index.html` directly in a browser, or serve with any static file server:
 
 ```bash
-# Node.js (npx, no install needed)
 npx serve .
-
-# Python 3
-python -m http.server 8080
 ```
-
-Then open `http://localhost:5000` (npx serve) or `http://localhost:8080` (Python) in your browser.
 
 ## Project structure
 
 ```
 burn-up/
-├── index.html    # HTML shell and CDN script tags
+├── index.html    # HTML shell, CDN script tags, and React app (inline JSX)
 ├── styles.css    # Custom CSS (base styles not covered by Tailwind)
-├── app.js        # React app and chart logic (JSX, transformed by Babel in-browser)
 └── README.md
 ```
 
@@ -45,7 +38,7 @@ burn-up/
 | Babel Standalone | latest | In-browser JSX transform |
 | Tailwind CSS | latest | Utility-first styling |
 
-Recharts and React versions are pinned to avoid breaking changes. Tailwind and Babel are pulled at latest since they are dev/rendering utilities only.
+Recharts and React versions are pinned to avoid breaking changes.
 
 ## How to use
 
